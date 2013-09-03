@@ -23,7 +23,7 @@ Get [Composer](http://getcomposer.org/download/) and run this in your terminal i
 ```
 php composer.phar install
 ```
-This will download and set up [PHPUnit](https://github.com/sebastianbergmann/phpunit/) and you should be ready to run the tests with:
+This will download and set up [PHPUnit](https://github.com/sebastianbergmann/phpunit/) and you should be ready to run all the tests with:
 ```
 vendor/bin/phpunit
 ```
