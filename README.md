@@ -9,7 +9,7 @@ Now you don't have more excuses to not read the [classic](http://www.amazon.com/
 
 How to use
 ----------
-The code contained here represents finished chapters, meaning that at the end of Chapter 1, the PHP equivalent would be in the respective chapter folders (in this case [src/TDD/Chapter1](src/TDD/Chapter1) and [tests/TDD/Chapter1](tests/TDD/Chapter1)).
+The code contained here represents finished chapters, meaning that at the end of Chapter 1 of the book, the PHP equivalent would be in the respective chapter folders (in this case [src/TDD/Chapter1](src/TDD/Chapter1) and [tests/TDD/Chapter1](tests/TDD/Chapter1)).
 
 You should use it for comparison reasons only. Write your own version, try again and again. Go for a walk, try once more, go for a run, try again. Still no luck? Do the following:
 
