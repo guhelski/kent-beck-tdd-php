@@ -36,12 +36,12 @@ class Chapter9Test extends \PHPUnit_Framework_TestCase
 
 	public function testCurrency()
 	{
-		$dollar = Money::dollar(1);
-		$franc = Money::franc(1);
+	    $dollar = Money::dollar(1);
+	    $franc = Money::franc(1);
 
-		$this->assertEquals("USD", $dollar->currency());
-		$this->assertEquals("CHF", $franc->currency());
-	}
+        $this->assertEquals("USD", $dollar->currency());
+	    $this->assertEquals("CHF", $franc->currency());
+    }
 
     public function testDifferentClassEquality()
     {
