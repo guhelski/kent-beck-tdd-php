@@ -25,8 +25,11 @@ vendor/bin/phpunit
 ```
 How to contribute
 -----------------
-1. Fork it.
-2. Create your chapter branch (git checkout -b chapter15).
-3. Commit your chapter or changes to existing ones (git commit -am 'Add Chapter 15').
-4. Push to the branch (git push origin chapter15).
-5. Create new Pull Request.
+1. Fork the project repo to your own account.
+2. Clone the repo to your local machine.
+3. Create your chapter branch (git checkout -b chapter15).
+4. Commit your chapter or changes to existing ones (git commit -am 'Add Chapter 15').
+5. Push your chapter branch to your fork.
+6. Create a new Pull Request.
+
+Have fun!
