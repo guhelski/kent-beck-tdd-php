@@ -31,7 +31,7 @@ How to contribute
 -----------------
 1. Fork the project to your own account.
 2. Clone the repo to your local machine.
-3. Create your chapter branch (git checkout -b chapter15).
-4. Commit your chapter or changes to existing ones (git commit -am 'Add Chapter 15').
+3. Create your chapter branch (```git checkout -b chapter15```).
+4. Commit your chapter or changes to existing ones (```git commit -am 'Add Chapter 15'```).
 5. Push your chapter branch to your fork.
 6. Create a new Pull Request.
