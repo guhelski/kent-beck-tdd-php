@@ -15,7 +15,7 @@ class Dollar
      * 
      * @param int $amount
      */
-	public function __construct($amount)
+	public function __construct(int $amount)
 	{
 		$this->amount = $amount;
 	}
@@ -26,7 +26,7 @@ class Dollar
      * @param int $multiplier
      * @return object Dollar
      */
-	public function times($multiplier)
+	public function times(int $multiplier): Dollar
 	{
 		return new Dollar($this->amount * $multiplier); 
 	}
@@ -39,7 +39,7 @@ class Dollar
      * @param Dollar $object
      * @return bool
      */
-	public function equals(Dollar $object)
+	public function equals(Dollar $object): bool
 	{
 		$dollar = $object;
 		return $this->amount == $dollar->amount; 
