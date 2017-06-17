@@ -4,6 +4,10 @@ namespace TDD\Chapter2;
 
 class Chapter2Test extends \PHPUnit_Framework_TestCase
 {
+
+	/**
+	 * Tests that the object $product's method amount returns the expected value
+	 */ 
     public function testMultiplication()
     {
         $five = new Dollar(5);
