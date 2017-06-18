@@ -48,7 +48,7 @@ class Chapter8Test extends \PHPUnit_Framework_TestCase
     public function testFrancMultiplication()
     {
     	$five = Money::franc(5);
-    	$this->assertEquals(new Franc(10), $five->times(2));
-    	$this->assertEquals(new Franc(15), $five->times(3));
+        $this->assertEquals(Money::franc(10), $five->times(2));
+        $this->assertEquals(Money::franc(15), $five->times(3));
     }
 }
