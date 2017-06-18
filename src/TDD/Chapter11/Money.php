@@ -1,6 +1,6 @@
 <?php
 
-namespace TDD\Chapter10;
+namespace TDD\Chapter11;
 
 class Money
 {

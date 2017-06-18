@@ -1,8 +1,8 @@
 <?php
 
-namespace TDD\Chapter10;
+namespace TDD\Chapter11;
 
-class Chapter9Test extends \PHPUnit_Framework_TestCase
+class Chapter11Test extends \PHPUnit_Framework_TestCase
 {
 
     /**
