@@ -32,7 +32,7 @@ class Money
      * @var int $amount
      * @return object Money
      */
-    static function dollar(int $amount)
+    static function dollar(int $amount): Money
     {
         return new Money($amount, "USD");
     }
@@ -42,7 +42,7 @@ class Money
      * @var int $amount
      * @return object Money
      */
-    static function franc(int $amount)
+    static function franc(int $amount): Money
     {
         return new Money($amount, "CHF");
     }
@@ -52,7 +52,7 @@ class Money
      * @var int $multiplier
      * @return object Money
      */
-    public function times(int $multiplier)
+    public function times(int $multiplier): Money
     {
         return new Money($this->amount * $multiplier, $this->currency);
     }
