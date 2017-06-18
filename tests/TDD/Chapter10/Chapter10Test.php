@@ -2,7 +2,7 @@
 
 namespace TDD\Chapter10;
 
-class Chapter9Test extends \PHPUnit_Framework_TestCase
+class Chapter10Test extends \PHPUnit_Framework_TestCase
 {
 
     /**
