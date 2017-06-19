@@ -4,7 +4,7 @@ namespace TDD\Chapter1;
 
 class Dollar
 {
-    
+
     /**
      * @var int $amount The monetary amount given to the dollar object
      */
