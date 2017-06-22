@@ -2,7 +2,7 @@
 
 namespace TDD\Chapter1;
 
-class Chapter1Test extends TestCase 
+class Chapter1Test extends \PHPUnit_Framework_TestCase 
 {
 	/**
 	 * Tests that Dollar's public variable, $amount, is the same as the given amount
