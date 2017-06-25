@@ -4,21 +4,44 @@ namespace TDD\Chapter5;
 
 class Dollar
 {
+	/**
+     * @var int $amount The monetary amount given to the dollar object
+     */
 	private $amount;
 
-	public function __construct($amount)
-	{
-		$this->amount = $amount;
-	}
+	/**
+     * Instantiate the Dollar class with an amount value
+     * 
+     * @param int $amount
+     */
+    public function __construct(int $amount)
+    {
+        $this->amount = $amount;
+    }
 
-	public function times($multiplier)
-	{
-		return new Dollar($this->amount * $multiplier); 
-	}
+	/**
+     * Takes a multipler to returns a new Dollar object instantiated with the product of the $amount and the passed in $multiplier
+     * 
+     * @param int $multiplier
+     * @return object Dollar
+     */
+    public function times(int $multiplier): Dollar
+    {
+        return new Dollar($this->amount * $multiplier);
+    }
 
-	public function equals(Dollar $object)
-	{
-		$dollar = $object;
-		return $this->amount == $dollar->amount; 
-	}
+	/**
+     * Take a Dollar object and returns a boolean if the passed in Dollar's $amount matches the self $amount
+     * @todo remove redundant renaming of $object to $dollar
+     * @todo capitalize $dollar for better readability to show it is an object
+     * 
+     * @param Dollar $object
+     * @return bool
+     */
+    public function equals(Dollar $object): bool
+    {
+        $dollar = $object;
+
+        return $this->amount == $dollar->amount;
+    }
 }
