@@ -6,7 +6,7 @@ class Dollar
 {
 
     /**
-     * @var int $amount The monetary amount given to the dollar objec
+     * @var int $amount The monetary amount given to the dollar object
      */
     public $amount;
 
