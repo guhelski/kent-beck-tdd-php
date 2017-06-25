@@ -6,7 +6,7 @@ class Dollar
 {
     public $amount;
 
-    public function __construct($amount)
+    public function __construct($amount
     {
         $this->amount = $amount;
     }
