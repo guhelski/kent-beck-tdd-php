@@ -14,7 +14,7 @@ class Money
      * @var string $currency    The standardized prefix given to any currency
      */
     protected $currency;
-
+    
     /**
      * Immediately defines the $amount value and type of $currency
      * 
