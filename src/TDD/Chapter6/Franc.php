@@ -4,7 +4,7 @@ namespace TDD\Chapter6;
 
 class Franc extends Money
 {
-	
+    
     /**
      * Instantiate the Franc class with an amount value
      * 
