@@ -5,7 +5,7 @@ namespace TDD\Chapter7;
 class Money
 {
 
-	/**
+    /**
      * @var int $amount The monetary amount given to the Money object
      */
     protected $amount;
