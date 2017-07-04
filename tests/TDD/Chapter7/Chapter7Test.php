@@ -4,6 +4,10 @@ namespace TDD\Chapter7;
 
 class Chapter7Test extends \PHPUnit_Framework_TestCase
 {
+
+    /**
+     * Tests that the object $product's method amount returns the expected value
+     */
     public function testMultiplication()
     {
         $five = new Dollar(5);
@@ -11,6 +15,10 @@ class Chapter7Test extends \PHPUnit_Framework_TestCase
         $this->assertEquals(new Dollar(15), $five->times(3));
     }
 
+    /**
+     * Using Money's method equal, this tests that both objects are equal to another returning a true
+     * This tests both Dollar and Franc and that they are differing objects are not equal
+     */
     public function testEquality()
     {
     	$fiveA = new Dollar(5);
@@ -28,6 +36,9 @@ class Chapter7Test extends \PHPUnit_Framework_TestCase
         $this->assertFalse($fiveA->equals($francFiveA));
     }
 
+    /**
+     * Same test as the original using Franc, rather than Dollar
+     */
     public function testFrancMultiplication()
     {
     	$five = new Franc(5);
