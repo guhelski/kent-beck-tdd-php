@@ -2,8 +2,13 @@
 
 namespace TDD\Chapter10;
 
-class Chapter9Test extends \PHPUnit_Framework_TestCase
+class Chapter10Test extends \PHPUnit_Framework_TestCase
 {
+
+    /**
+     * Calls abstract class Money and creates a Dollar object via the static function dollar()
+     * Tests that the initially created Dollar object's $amount is equal to the amount after it has bee given to the times() method 
+     */
     public function testMultiplication()
     {
         $five = Money::dollar(5);
@@ -11,6 +16,13 @@ class Chapter9Test extends \PHPUnit_Framework_TestCase
         $this->assertEquals(Money::dollar(15), $five->times(3));
     }
 
+    /**
+     * Calls the abstract class Money and returns the currency type definied by the static method
+     * This test:
+     *      Identifies if two objects are the same
+     *      Identifies if two objects are not the same
+     *      Identifies if the currencies being compared are the same
+     */ 
     public function testEquality()
     {
     	$fiveA = Money::dollar(5);
@@ -27,6 +39,10 @@ class Chapter9Test extends \PHPUnit_Framework_TestCase
         $this->assertFalse($fiveA->equals($francFiveA));
     }
 
+    /**
+     * Calls abstract class Money and creates a Franc object via the static function franc()
+     * Tests that the initially created Franc object's $amount is equal to the amount after it has bee given to the times() method 
+     */
     public function testFrancMultiplication()
     {
     	$five = Money::franc(5);
@@ -34,6 +50,9 @@ class Chapter9Test extends \PHPUnit_Framework_TestCase
     	$this->assertEquals(Money::franc(15), $five->times(3));
     }
 
+    /**
+     * Creates two types of currencies and tests that their $currency types are correct
+     */
 	public function testCurrency()
 	{
 	    $dollar = Money::dollar(1);
@@ -43,6 +62,9 @@ class Chapter9Test extends \PHPUnit_Framework_TestCase
 	    $this->assertEquals("CHF", $franc->currency());
     }
 
+    /**
+     * Tests if the two objects have the same $currency type
+     */
     public function testDifferentClassEquality()
     {
         $money = new Money(10, "CHF");
