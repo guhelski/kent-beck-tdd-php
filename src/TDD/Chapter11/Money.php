@@ -21,8 +21,7 @@ class Money
      * @var int $amount
      * @var string $currency
      */
-    public function __construct(int $amount, string $currency)
-    {
+    public function __construct(int $amount, string $currency) {
         $this->amount = $amount;
         $this->currency = $currency;
     }
@@ -50,8 +49,7 @@ class Money
      * @var int $multiplier
      * @return object Money
      */
-    public function times(int $multiplier)
-    {
+    public function times(int $multiplier) {
         return new Money($this->amount * $multiplier, $this->currency);
     }
 
@@ -63,8 +61,7 @@ class Money
      * @param Money $object
      * @return bool
      */
-    public function equals(Money $object): bool
-    {
+    public function equals(Money $object): bool {
         $money = $object;
         return $this->amount == $money->amount && self::currency() == $money->currency;
     }
@@ -73,14 +70,12 @@ class Money
      * Returns the object's protected $currency type
      * @return string
      */
-    public function currency(): string
-    {
+    public function currency(): string {
         return $this->currency;
     }
 
     // Not really useful here, just for completeness
-    public function __toString()
-    {
+    public function __toString() {
         return $this->amount . " " . $this->currency;
     }
 }
