@@ -4,6 +4,11 @@ namespace TDD\Chapter8;
 
 class Chapter8Test extends \PHPUnit_Framework_TestCase
 {
+
+    /**
+     * Calls abstract class Money and creates a Dollar object via the static function dollar()
+     * Tests that the initially created Dollar object's $amount is equal to the amount after it has bee given to the times() method 
+     */
     public function testMultiplication()
     {
         $five = Money::dollar(5);
@@ -11,6 +16,14 @@ class Chapter8Test extends \PHPUnit_Framework_TestCase
         $this->assertEquals(Money::dollar(15), $five->times(3));
     }
 
+    /**
+     * Calls the abstract class Money and returns the currency type definied by the static method
+     * 
+     * The first and second group of testing:
+     *      Identifies if two objects are the same
+     *      Identifies if two objects are not the same
+     * The last line of testing identifies if the currencies being compared are the same
+     */
     public function testEquality()
     {
     	$fiveA = Money::dollar(5);
@@ -28,10 +41,14 @@ class Chapter8Test extends \PHPUnit_Framework_TestCase
         $this->assertFalse($fiveA->equals($francFiveA));
     }
 
+    /**
+     * Calls abstract class Money and creates a Franc object via the static function franc()
+     * Tests that the initially created Franc object's $amount is equal to the amount after it has bee given to the times() method 
+     */
     public function testFrancMultiplication()
     {
     	$five = Money::franc(5);
-    	$this->assertEquals(new Franc(10), $five->times(2));
-    	$this->assertEquals(new Franc(15), $five->times(3));
+        $this->assertEquals(Money::franc(10), $five->times(2));
+        $this->assertEquals(Money::franc(15), $five->times(3));
     }
 }
