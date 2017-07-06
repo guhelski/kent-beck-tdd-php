@@ -25,11 +25,11 @@ class Chapter11Test extends \PHPUnit_Framework_TestCase
      */ 
     public function testEquality()
     {
-    	$fiveA = Money::dollar(5);
-    	$fiveB = Money::dollar(5);
-    	$this->assertTrue($fiveA->equals($fiveB));
-    	$six = Money::dollar(6);
-    	$this->assertFalse($fiveA->equals($six));
+        $fiveA = Money::dollar(5);
+        $fiveB = Money::dollar(5);
+        $this->assertTrue($fiveA->equals($fiveB));
+        $six = Money::dollar(6);
+        $this->assertFalse($fiveA->equals($six));
         $francFiveA = Money::franc(5);
         $this->assertFalse($fiveA->equals($francFiveA));
     }
@@ -40,20 +40,20 @@ class Chapter11Test extends \PHPUnit_Framework_TestCase
      */
     public function testFrancMultiplication()
     {
-    	$five = Money::franc(5);
-    	$this->assertEquals(Money::franc(10), $five->times(2));
-    	$this->assertEquals(Money::franc(15), $five->times(3));
+        $five = Money::franc(5);
+        $this->assertEquals(Money::franc(10), $five->times(2));
+        $this->assertEquals(Money::franc(15), $five->times(3));
     }
 
     /**
      * Creates two types of currencies and tests that their $currency types are correct
      */
-	public function testCurrency()
-	{
-	    $dollar = Money::dollar(1);
-	    $franc = Money::franc(1);
+    public function testCurrency()
+    {
+        $dollar = Money::dollar(1);
+        $franc = Money::franc(1);
 
         $this->assertEquals("USD", $dollar->currency());
-	    $this->assertEquals("CHF", $franc->currency());
+        $this->assertEquals("CHF", $franc->currency());
     }
 }
