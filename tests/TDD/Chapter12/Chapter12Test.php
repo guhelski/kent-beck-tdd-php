@@ -9,8 +9,7 @@ class Chapter12Test extends \PHPUnit_Framework_TestCase
      * Calls abstract class Money and creates a Dollar object via the static function dollar()
      * Tests that the initially created Dollar object's $amount is equal to the amount after it has bee given to the times() method 
      */
-    public function testMultiplication()
-    {
+    public function testMultiplication() {
         $five = Money::dollar(5);
         $this->assertEquals(Money::dollar(10), $five->times(2));
         $this->assertEquals(Money::dollar(15), $five->times(3));
@@ -23,8 +22,7 @@ class Chapter12Test extends \PHPUnit_Framework_TestCase
      *      Identifies if two objects are not the same
      *      Identifies if the currencies being compared are the same
      */ 
-    public function testEquality()
-    {
+    public function testEquality() {
     	$fiveA = Money::dollar(5);
     	$fiveB = Money::dollar(5);
     	$this->assertTrue($fiveA->equals($fiveB));
@@ -38,8 +36,7 @@ class Chapter12Test extends \PHPUnit_Framework_TestCase
      * Calls abstract class Money and creates a Franc object via the static function franc()
      * Tests that the initially created Franc object's $amount is equal to the amount after it has bee given to the times() method 
      */
-    public function testFrancMultiplication()
-    {
+    public function testFrancMultiplication() {
     	$five = Money::franc(5);
     	$this->assertEquals(Money::franc(10), $five->times(2));
     	$this->assertEquals(Money::franc(15), $five->times(3));
@@ -48,8 +45,7 @@ class Chapter12Test extends \PHPUnit_Framework_TestCase
     /**
      * Creates two types of currencies and tests that their $currency types are correct
      */
-	public function testCurrency()
-	{
+	public function testCurrency() {
 	    $dollar = Money::dollar(1);
 	    $franc = Money::franc(1);
 
@@ -61,8 +57,7 @@ class Chapter12Test extends \PHPUnit_Framework_TestCase
      * Incomplete Test:
      * The actual test that is ocuring here is a Money object of $amount value 10 and $currency type of 'USD' being compared to the explicitly returned Money object in the $bank->reduce()
      */
-    public function testSimpleAddition() 
-    {
+    public function testSimpleAddition() {
         $five = Money::dollar(5);
         $sum = $five->plus($five);
         $bank = new Bank();
